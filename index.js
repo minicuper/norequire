@@ -21,7 +21,7 @@ module.exports = function (options) {
   
   global.app = global.app || {};
   
-  if (options.useLib === true) {
+  if (options.uselib === true) {
     obj = global.app.lib = {};
   } else {
     obj = global.app;
