@@ -56,3 +56,9 @@ var options = {
 };
 require('singlerequire')(options);
 ```
+
+ - `uselib`     Use a `app.lib` instead of `app` for packages (**false** by default)
+ - `dirname`    Dirname for your app **package.json** (**prosess.mainModule.filename - dir** by default)
+ - `names`      Map of aliases, for example {'underscore': '_'} 
+ - `global`     Array of packages that should be global for all app js-files (['_', 'async'] for example) - use aliase if it is
+ - `ignore`     Array of packages that should be ignored

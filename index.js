@@ -9,7 +9,7 @@ module.exports = function (options) {
   options = options || {};
   
   options.dirname   = options.dirname   || dirname;
-  options.useLib    = options.useLib    || false;
+  options.uselib    = options.uselib    || false;
   options.global    = options.global    || [];
   options.ignore    = options.ignore    || [];
   options.names     = options.names     || {};
