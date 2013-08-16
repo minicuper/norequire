@@ -1,4 +1,6 @@
-# Singlerequire -- Single "require" in you node.js app
+# Singlerequire
+
+Single "require" in your node.js app
 
 ## Install
 
