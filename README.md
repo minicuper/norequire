@@ -1,17 +1,17 @@
-# Singlerequire
+# Norequire
 
 Single "require" in your node.js app
 
 ## Install
 
 <pre>
-  npm install singlerequire
+  npm install norequire
 </pre>
 
 
 ## Super simple to use
 
-Singlerequire use **global.app**  and data from **package.json** to automatical link all dependencies.
+Norequire use **global.app**  and data from **package.json** to automatical link all dependencies.
 
 Your app **package.json**
 ```json
@@ -31,7 +31,7 @@ Your app **package.json**
 
 Your **app.js**
 ```javascript
-require('singlerequire')();
+require('norequire')();
 
 ```
 After that you can access to all the packages in all your project js-files using **app** var.
@@ -50,7 +50,7 @@ You can pass some options in require:
 
 ```javascript
 var options = {
-  uselib: false,
+  appname: 'app.lib',
   dirname: __dirname,
   names: {'underscore': '_'},
   global: ['_', 'async'],
@@ -59,7 +59,7 @@ var options = {
 require('singlerequire')(options);
 ```
 
- - `uselib`     Use a `app.lib` instead of `app` for packages (**false** by default)
+ - `appname`    Use your global object instead of `app` for packages (**app** by default)
  - `dirname`    Dirname for your app **package.json** (**prosess.mainModule.filename - dir** by default)
  - `names`      Map of aliases, for example {'underscore': '_'} 
  - `global`     Array of packages that should be global for all app js-files (['_', 'async'] for example) - use aliase if it is

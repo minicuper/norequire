@@ -1,5 +1,5 @@
 {
-  "name": "singlerequire",
+  "name": "norequire",
   "description": "Single 'require' in you node.js app",
   "tags": [
     "require"
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/mikeal/request.git"
+    "url": "https://github.com/zag2art/norequire.git"
   },
   "bugs": {
-    "url": "https://github.com/zag2art/singlerequire/issues"
+    "url": "https://github.com/zag2art/norequire/issues"
   },
   "engines": [
     "node >= 0.8.0"
